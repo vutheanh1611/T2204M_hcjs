@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/baithi.css"/>
+    <link rel="stylesheet" href="libs/bootstrap-5.0.2-dist/css/bootstrap.css"/>
+    <meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+</head>
+<body>
+<section class="section ">
+    <div class="container">
+        <div class="row hd-ct">
+            <div class="col-12 d-flex">
+                <p  style="flex-direction: row">
+                    <i class="fa-solid fa-arrow-left"></i>
+                <h4 >Checkout Form</h4>
+                </p>
+            </div>
+
+            <h2 class="col-12">Totlal To Pay 93$</h2>
+
+            <div class="col-12">
+                <div class="visa">
+                    <a href="https://www.visa.com.vn/en_VN?dclid=&gclid=Cj0KCQjwlK-WBhDjARIsAO2sErQ6KOZI_mBCOuDUHX81VY4m827130PfdbA30eBYu9PZ-Ev5Es85UWQaAhvzEALw_wcB"> <img  src="image/289762420_1073458209965349_8677250251147306121_n.png"/></a>
+                    <a href="https://www.paypal.com/VN/home?kid=p71253713730&gclid=Cj0KCQjwlK-WBhDjARIsAO2sErR94c3tfhHo9jnt4GAhv0apcsTu-Om864-BzE97_AVvHh5mjQnu_LUaArN9EALw_wcB&gclsrc=aw.ds"> <img class="pay" src="image/291598234_1758012214530190_5210563355594357901_n.png"/></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="name">
+            <label><b>Name on Card</b></label>
+            <p><input class="jo" required name="name" type="name" placeholder="John Smith "/></p>
+        </div>
+        <div class="number">
+            <div class="row">
+                <div class="col">
+                    <p>Card Number</p>
+                    <input required name="pwd" type="password" placeholder="Card Number"/>
+                </div>
+                <div class="col">
+                    <p>CVV</p>
+                    <input id="cv" required name="cvv" type="cvv" placeholder="CVV"/>
+                </div>
+            </div>
+        </div>
+        <div class="number">
+            <p>Expiration Date</p>
+            <input class="jo" name="dte" type="date" placeholder="MM/YY"/>
+        </div>
+        <div class="number">
+            <button class="but" type="button" onclick="make">Make A Payment</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
