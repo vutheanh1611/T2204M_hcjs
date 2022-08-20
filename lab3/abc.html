@@ -1,0 +1,131 @@
+Assignment09(2).sql
+Người có quyền truy cập
+
+Thuộc tính hệ thống
+Loại
+SQL
+Kích thước
+7 KB
+Bộ nhớ đã sử dụng
+7 KB
+Vị trí
+Assignment09
+Chủ sở hữu
+Danh Phạm
+Lần sửa đổi gần đây nhất
+19 thg 8, 2022 do Danh Phạm thực hiện
+Đã mở
+23:35 do tôi thực hiện
+Người tạo
+19 thg 8, 2022
+Không có mô tả nào
+Người xem có thể tải xuống
+﻿insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC001', N'Cty TNHH Toàn Pháp','Hai Chau','05113999888','568941');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC002', N'Cty Cổ phần Đông Du','Lien Chieu','05113999889','456789');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC003', N'Ông Nguyễn Văn A','Hoa Thuan','05113999890','321456');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC004', N'Cty Cổ phần toàn cầu xanh','Thanh Khe','05113658945','513364');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC005', N'Cty TNHH AMA','Thanh Khe','051139875466','546546');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC006', N'Bà Trần Thị Bích Vân','Lien Chieu','05113587469','524545');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC007', N'Cty TNHH Phan Thành','Thanh Khe','05113987456','113021');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC008', N'Ông Phan Đình Nam','Hoa Thuan','05113532456','121230');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC009', N'Tập đoàn Đông Nam Á','Lien Chieu','0511387121','533654');
+insert into Suppliers(MaNhaCC,Name,Address,Phone,MaSoThue)
+values('NCC010', N'Cty Cổ phần Rạng Đông','Lien Chieu','05113569654','187684');
+
+insert into TypeServices(MaLoaiDV,Name)
+values('DV01',N'Dịch vụ xe taxi');
+insert into TypeServices(MaLoaiDV,Name)
+values('DV02',N'Dịch vụ xe buýt công cộng theo tuyến cố định');
+insert into TypeServices(MaLoaiDV,Name)
+values('DV03',N'Dịch vụ xe cho thuê theo hợp đồng');
+
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Hiace','Toyota',16);
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Vios','Toyota',5);
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Escape','Ford',5);
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Cerato','KIA',7);
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Forte','KIA',5);
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Starex','Huyndai',7);
+insert into Vehicles(DongXe,Name,NumberSeat)
+values('Grand-i10','Huyndai',7);
+
+insert into FeeItems(MaMP,Price,Decreption)
+values('MP01','10000',N'Áp dụng từ 1/2015');
+insert into FeeItems(MaMP,Price,Decreption)
+values('MP02','15000',N'Áp dụng từ 2/2015');
+insert into FeeItems(MaMP,Price,Decreption)
+values('MP03','20000',N'Áp dụng từ 1/2010');
+insert into FeeItems(MaMP,Price,Decreption)
+values('MP04','25000',N'Áp dụng từ 2/2011');
+
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK001', 'NCC001', 'DV01', 'Hiace', 'MP01', '20151120', '20161120',4);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK002', 'NCC002', 'DV02', 'Vios', 'MP02', '20151120', '20161120',3);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK003', 'NCC003', 'DV03', 'Escape', 'MP03', '20171120', '20181120',5);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK004', 'NCC005', 'DV01', 'Cerato', 'MP04', '20151120', '20191120',7);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK005', 'NCC002', 'DV02', 'Forte', 'MP03', '20191120', '20201120',1);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK006', 'NCC004', 'DV03', 'Starex', 'MP04', '10161120', '20211120',2);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK007', 'NCC005', 'DV01', 'Cerato', 'MP03', '20151130', '25161120',8);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK008', 'NCC006', 'DV01', 'Vios', 'MP02', '20160228', '20160815',9);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK009', 'NCC005', 'DV03', 'Grand-i10', 'MP02', '20160427', '20170417',10);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK010', 'NCC006', 'DV01', 'Forte', 'MP02', '20151121', '20160222',4);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK011', 'NCC007', 'DV01', 'Forte', 'MP01', '20161225', '20170220',5);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK012', 'NCC007', 'DV03', 'Cerato', 'MP01', '20160414', '20171220',6);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK013', 'NCC003', 'DV02', 'Cerato', 'MP01', '20151221', '20161221',8);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK014', 'NCC008', 'DV02', 'Cerato', 'MP01', '20160520', '20161230',1);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK015', 'NCC003', 'DV01', 'Hiace', 'MP02', '20180424', '20191120',6);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK016', 'NCC001', 'DV03', 'Grand-i10', 'MP02', '20160622', '20161121',8);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK017', 'NCC002', 'DV03', 'Cerato', 'MP03', '20160930', '20190930',4);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK018', 'NCC008', 'DV03', 'Escape', 'MP04', '20171213', '20180930',2);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK019', 'NCC003', 'DV03', 'Escape', 'MP03', '20160124', '20161230',8);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK020', 'NCC002', 'DV03', 'Cerato', 'MP04', '20160503', '20171021',7);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK021', 'NCC006', 'DV01', 'Forte', 'MP02', '20150130', '20161230',9);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK022', 'NCC002', 'DV02', 'Cerato', 'MP04', '20160725', '20171230',6);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK023', 'NCC002', 'DV01', 'Forte', 'MP03', '20171130', '20180520',5);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK024', 'NCC003', 'DV03', 'Forte', 'MP04', '20171223', '20191130',8);
+insert into Subscriptions(MaDKCC,MaNhaCC,MaLoaiDV,DongXe,MaMP,DateStart,DateStop,Qty)
+values ('DK025', 'NCC003', 'DV03', 'Hiace', 'MP02', '20160824', '20171025',1);
+
+--READ
+select*from Subscriptions;
+select*from Suppliers;
+select*from TypeServices;
+select*from Vehicles;
+select*from FeeItems;
