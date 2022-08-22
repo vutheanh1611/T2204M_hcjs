@@ -1,0 +1,18 @@
+create table Type_Products(
+TypeId nvarchar(255) primary key ,
+Name nvarchar(255) not null unique
+);
+
+create table Managers(
+ManId  nvarchar(255) primary key ,
+Name nvarchar(255) not null unique
+);
+create table Products(
+Product_Id nvarchar(255) primary key not null,
+Date_Product date not null ,
+MLSP_Id nvarchar(255) not null foreign key references Type_Products(TypeId),
+Manager_Id nvarchar(255) not null foreign key references Managers(ManId)
+);
+--drop table Products;
+--drop table Managers;
+--drop table Type_Products;

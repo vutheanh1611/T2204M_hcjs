@@ -1,0 +1,51 @@
+﻿insert into Type_Products(TypeId,Name) values (N'Z37E',N'Máy tính sách tay Z37')
+insert into Type_Products(TypeId,Name) values (N'Z375',N'Máy điện thoại Z37')
+insert into Type_Products(TypeId,Name) values (N'C651',N'laptop Dell')
+insert into Type_Products(TypeId,Name) values (N'K375',N'Iphone 13')
+insert into Type_Products(TypeId,Name) values (N'L375',N'Máy in')
+--4. Viết các câu lênh truy vấn để
+--a/Liệt kê danh sách loại sản phẩm của công ty.
+select TypeId,Name from Type_Products;
+select * from Type_Products;
+
+insert into Managers(ManId,Name) values (N'987688',N'Nguyễn A')
+insert into Managers(ManId,Name) values (N'987689',N'Nguyễn B')
+insert into Managers(ManId,Name) values (N'651654',N'Nguyễn C')
+insert into Managers(ManId,Name) values (N'156141',N' Nguyễn D')
+insert into Managers(ManId,Name) values (N'385551',N'Nguyễn E')
+--b/Liệt kê danh sách người chịu trách nhiệm của công ty.
+select ManId,Name from Managers;
+select* from Managers;
+
+insert into Products(Product_Id,Date_Product, MLSP_Id,Manager_Id) values (N'Z37111111',N'12/12/09',N'Z37E',N'987688')
+insert into Products(Product_Id,Date_Product, MLSP_Id,Manager_Id) values (N'Z37561515',N'12/12/09',N'D845',N'515151')
+insert into Products(Product_Id,Date_Product, MLSP_Id,Manager_Id) values (N'Z37799995',N'12/12/09',N'RKF5',N'784231')
+insert into Products(Product_Id,Date_Product, MLSP_Id,Manager_Id) values (N'Z37132514',N'12/12/09',N'M51D',N'987688')
+insert into Products(Product_Id,Date_Product, MLSP_Id,Manager_Id) values (N'C51515515',N'12/12/09',N'G51N',N'987688')
+--c/Liệt kê danh sách người chịu trách nhiệm của công ty.
+
+select * Product_Id,Date_Product,MLSP_Id,Mansger_Id from Products;
+select * from Products;
+
+--5. Viết các câu lệnh truy vấn để lấy
+--a/Liệt kê danh sách loại sản phẩm của công ty theo thứ tự tăng dần của tên
+select * from Type_Products order by Name asc;
+
+--b/Liệt kê danh sách người chịu trách nhiệm của công ty theo thứ tự tăng dần của tên.
+select * from Managers order by Name desc;
+
+--c/Liệt kê các sản phẩm của loại sản phẩm có mã số là Z37E.
+select * from Products where Products.MLSP_Id='Z37E';
+
+--d/Liệt kê các sản phẩm Nguyễn A chịu trách nhiệm theo thứ tự giảm dần của mã
+select * from Products where Products.Manager_Id in(select ManId from Managers where Name=N'Nguyễn A');
+
+--6. Viết các câu lệnh truy vấn để
+--a/Số sản phẩm của từng loại sản phẩm.
+select COUNT(*) as SLSanPham,MLSP_Id from Products group by Products.MLSP_Id;
+
+--c/ Hiển thị toàn bộ thông tin về sản phẩm và loại sản phẩm.
+select * from Products join Type_Products on Products.MLSP_Id=Type_Products.TypeId;
+
+--d/ Hiển thị toàn bộ thông tin về người chịu trách nhiêm, loại sản phẩm và sản phẩm.
+select * from Managers join Products on Manager_Id=Managers.ManId join Type_Products on TypeId=MLSP_Id;
