@@ -1,0 +1,22 @@
+.menu-item li{
+    color: midnightblue;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 0;
+
+}
+.menu-item li:hover{
+    color: #1db8c1;
+    cursor: pointer;
+}
+#navbarSupportedContent li a:hover{
+    color:white;
+    border: 0px solid aliceblue;
+    background-color: midnightblue;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+
+}
+#navbarSupportedContent li a{
+    color:midnightblue ;
+}

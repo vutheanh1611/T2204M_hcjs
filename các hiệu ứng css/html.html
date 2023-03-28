@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<section class="header sticky-top" style="border-bottom: 1px solid midnightblue; background-color: aliceblue" >
+              <nav class="navbar navbar-expand-lg navbar-light  ">
+                    <div class="container-fluid ">
+                        <img  src="images/Artboard%201logo.png" class="img-fluid mx-5"  alt="" style="width: 284px; height: 53px;">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse header-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold " aria-current="page" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold  " aria-current="page" href="#">Check in out</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold " aria-current="page" href="#">Dành cho bạn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold " aria-current="page" href="#">Liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold " aria-current="page" href="#">Bài viết</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold me-5 " aria-current="page" href="#">Về chúng tôi</a>
+                                </li>
+                                <li class="nav-item ms-5">
+                                    <a class="nav-link fs-5 fw-bold " aria-current="page" href="#"><i class="fa-solid fa-user-plus me-1"></i>Đăng kí </a>
+                                </li>
+                                <li class="nav-item ms-5">
+                                    <a class="nav-link fs-5 fw-bold " aria-current="page" href="#"><i class="fa-solid fa-user me-1"></i> Đăng nhập</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+</section>
+<img src="https://phunugioi.com/wp-content/uploads/2022/11/Hinh-nen-may-bay.jpg" alt="" style="background-repeat: no-repeat; height: 700px; width: 100%">
+<div class="container-fluid menu-fly">
+    <div class="container menu-main" style="border: 1px solid midnightblue; background-color: deepskyblue;">
+     <div class="row menu-air ">
+         <div class="col-md-3 ">
+             <div class="input-group mb-3 input-na">
+                 <label class="input-group-text" for="inputGroupSelect01">Chặng bay</label>
+                 <select class="form-select" id="inputGroupSelect01">
+                     <option value="1">Một chiều</option>
+                     <option value="2">Khứ hồi</option>
+                 </select>
+             </div>
+         </div>
+         <div class="col-md-3 ">
+             <div class="input-group mb-3 input-na">
+                 <label class="input-group-text" for="inputGroupSelect02">Hạng vé</label>
+                 <select class="form-select" id="inputGroupSelect02">
+                     <option value="1">Phổ thông</option>
+                     <option value="2">Thương gia</option>
+                 </select>
+             </div>
+         </div>
+     </div>
+         <div class="col-md-3"></div>
+     <div class="row menu-air">
+         <div class="col-md-3">
+             <div class="input-group mb-3 input-na">
+                 <label class="input-group-text" for="inputGroupSelect04">Từ</label>
+                 <select class="form-select" id="inputGroupSelect04">
+                     <option value="1">Tp. Hồ Chí Minh(SGN)</option>
+                     <option value="2">Hà Nội(HAN)</option>
+                     <option value="3">Buôn Ma Thuột(BMV)</option>
+                     <option value="4">Cần Thơ(VCA)</option>
+                     <option value="5">Chu Lai(VCL)</option>
+                     <option value="6">Đà Lạt(DLI)</option>
+                     <option value="7">Đà Nẵng(DAD)</option>
+                     <option value="8">Đồng Hới(VDH)</option>
+                     <option value="9">Hải Phòng(HPH)</option>
+                     <option value="10">Huế(HUI)</option>
+                     <option value="11">Nha Trang(CXR)</option>
+                     <option value="12">Phú Quốc(PQC)</option>
+                     <option value="13">Pleiku(PXU)</option>
+                     <option value="14">Quy Nhơn(UIH)</option>
+                     <option value="15">Thanh Hoá(THD)</option>
+                     <option value="16">Tuy Hòa(TBB)</option>
+                     <option value="16">Vân Đồn(VDO)</option>
+                     <option value="16">Vinh(VII)</option>
+                 </select>
+
+             </div>
+         </div>
+         <div class="col-md-3">
+             <div class="input-group mb-3 input-na">
+                 <label class="input-group-text" for="inputGroupSelect05">Đến</label>
+                 <select class="form-select" id="inputGroupSelect05">
+                     <option value="1">Tp. Hồ Chí Minh(SGN)</option>
+                     <option value="2">Hà Nội(HAN)</option>
+                     <option value="3">Buôn Ma Thuột(BMV)</option>
+                     <option value="4">Cần Thơ(VCA)</option>
+                     <option value="5">Chu Lai(VCL)</option>
+                     <option value="6">Đà Lạt(DLI)</option>
+                     <option value="7">Đà Nẵng(DAD)</option>
+                     <option value="8">Đồng Hới(VDH)</option>
+                     <option value="9">Hải Phòng(HPH)</option>
+                     <option value="10">Huế(HUI)</option>
+                     <option value="11">Nha Trang(CXR)</option>
+                     <option value="12">Phú Quốc(PQC)</option>
+                     <option value="13">Pleiku(PXU)</option>
+                     <option value="14">Quy Nhơn(UIH)</option>
+                     <option value="15">Thanh Hoá(THD)</option>
+                     <option value="16">Tuy Hòa(TBB)</option>
+                     <option value="16">Vân Đồn(VDO)</option>
+                     <option value="16">Vinh(VII)</option>
+                 </select>
+
+             </div>
+         </div>
+         <div class="col-md-2">
+             <div class="input-group mb-2 ">
+                 <input class="input-group-text" id="comeID"  text="text" placeholder="Ngày đi" style="background-color: white;">
+                 <i class="fa-solid fa-calendar-days" style="margin:-26px 0px 0px 5px ; color:midnightblue"></i>
+             </div>
+         </div>
+         <div class="col-md-2">
+             <div class="input-group mb-2">
+                 <input class="input-group-text" id="backID" placeholder="Ngày về" style="background-color: white;">
+                 <i class="fa-solid fa-calendar-days" style="margin:-26px 0px 0px 5px ; color:midnightblue"></i>
+             </div>
+         </div>
+         <div class="col-md-2">
+             <button type="button" class="btn"><a href="vemaybay.html">Tìm kiếm</a></button>
+         </div>
+     </div>
+
+ </div>
+</div>
+
+<div id="content">
+    <div class="container">
+        <h2 class="header2">Popular Cities</h2>
+        <div id="cities" class="clear">
+
+            <div class="city">
+
+                <div class="city_images">
+                    <a href="#"><img src="https://www.larousse.fr/encyclopedie/data/images/1314239-New_York_Empire_State_Building.jpg" class="city_img" alt="">
+
+                        <span class="text_image">New York</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="city">
+
+                <div class="city_images">
+
+                    <a href="">
+                        <img src="https://i.pinimg.com/originals/ba/9f/40/ba9f407e7e1d0573253a79d779aa43ca.jpg" class="city_img" alt=""> <span class="text_image">Istanbul</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="city">
+                <div class="city_images">
+                    <a href="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/KeizersgrachtReguliersgrachtAmsterdam.jpg/640px-KeizersgrachtReguliersgrachtAmsterdam.jpg" class="city_img" alt=""><span class="text_image">Amsterdam</span>
+                    </a>
+                </div>
+            </div>
+            <div class="city">
+                <div class="city_images">
+                    <a href="">
+                        <img src="https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateParis_Heroshutterstock_112137761.jpg" class="city_img" alt="">
+                        <span class="text_image">Paris</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="border">
+</div>
+
+<div class="line-center"></div>
+<section class="footer " style="background-color: aliceblue">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-4 footer-item">
+                <div class="logo2 my-3">
+                    <img src="images/Artboard%201logo.png" style="height: 70px; width: 120px;" alt="">
+                </div>
+                <hr>
+                <div class="letter ">
+                    <h4>Đối tác hàng không</h4>
+                    <p>Đối tác hàng không nội địa. Những đối tác hàng không hàng đầu Việt Nam sẽ chắp cánh đưa bạn đến mọi địa điểm trên mãnh đất Việt.</p>
+                    <hr>
+                    <div class="logo3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col"><img src="https://www.vietnamairlines.com/~/media/Images/VNANew/Home/Logo%20Header/VNA_logo_vn.png" alt="" style="width: 90px; height: 36px;"></div>
+                                <div class="col"><img src="https://www.vietjetair.com/static/media/vj-logo.0f71c68b.svg" alt="" style="width: 90px; height: 36px;"></div>
+                                <div class="col"><img src="https://www.bambooairways.com/vn-vi/wp-content/themes/bamboo/resources/assets/images/logo-bas-big.png" alt="" style="width: 90px; height: 36px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 footer-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col menu-item">
+                            <ul>
+                                <li>Trang chủ</li>
+                                <li>Hợp tác</li>
+                                <li>Ưu đãi</li>
+                                <li>Tuyển dụng</li>
+                                <li>Theo dõi</li>
+                            </ul>
+                        </div>
+                        <div class="col menu-item">
+                            <li>Góp ý</li>
+                            <li>Báo cáo</li>
+                            <li>Liên hệ </li>
+                            <li>Về chúng tôi</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 footer-item">
+                <img src="images/img_1.png" alt=""style="height:285px; width:400px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    flatpickr("#comeID", {
+        dateFormat: "d.m.Y",
+    });
+    flatpickr("#backID", {
+        dateFormat: "d.m.Y",
+    });
+
+</script>
+</body>
+</html>
